@@ -19,6 +19,7 @@
 /* abeck custom settings. */
 #define HOLD_ON_OTHER_KEYPRESS
 #define CHORDAL_HOLD
+#define CHORDAL_HOLD_ENABLE
 
 #ifdef VIA_ENABLE
 /* VIA configuration. */
