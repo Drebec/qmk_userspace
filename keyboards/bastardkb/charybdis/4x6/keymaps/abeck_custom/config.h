@@ -17,7 +17,8 @@
 #pragma once
 
 /* abeck custom settings. */
-#define PERMISSIVE_HOLD
+#define HOLD_ON_OTHER_KEYPRESS
+#define CHORDAL_HOLD
 
 #ifdef VIA_ENABLE
 /* VIA configuration. */
