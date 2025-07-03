@@ -20,6 +20,7 @@
 #define HOLD_ON_OTHER_KEYPRESS
 #define CHORDAL_HOLD
 #define CHORDAL_HOLD_ENABLE
+#define TAPPING_TERM 120
 
 #ifdef VIA_ENABLE
 /* VIA configuration. */
