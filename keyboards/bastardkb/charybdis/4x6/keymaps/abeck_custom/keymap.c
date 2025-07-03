@@ -64,13 +64,13 @@ static uint16_t auto_pointer_layer_timer = 0;
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [LAYER_BASE] = LAYOUT(
   // ╭──────────────────────────────────────────────────────╮ ╭──────────────────────────────────────────────────────╮
-       XXXXXXX,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,       KC_6,    KC_7,    KC_8,    KC_9,    KC_0, KC_MINS,
+       XXXXXXX,    KC_1,    KC_2,    KC_3,    KC_4,    KC_5,       KC_6,    KC_7,    KC_8,    KC_9,    KC_0, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       XXXXXXX,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,       KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, KC_BSLS,
+       XXXXXXX,    KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,       KC_Y,    KC_U,    KC_I,    KC_O,    KC_P, XXXXXXX,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
        KC_UNDS,    KC_A,    KC_S,    KC_D,  LOWER_F,   KC_G,       KC_H,   RAISE_J,  PT_K,    KC_L,  KC_SCLN, KC_QUOT,
   // ├──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────┤
-       KC_LCTL,    KC_Z,    CTL_X,   ALT_C,  SFT_V,    KC_B,       KC_N,   SFT_M, ALT_COMM, CTL_DOT, KC_SLSH, KC_LALT,
+       KC_LCTL,    KC_Z,    CTL_X,   ALT_C,  SFT_V,    KC_B,       KC_N,   SFT_M, ALT_COMM, CTL_DOT, KC_SLSH, KC_BSLS,
   // ╰──────────────────────────────────────────────────────┤ ├──────────────────────────────────────────────────────╯
                              KC_LSFT, KC_TAB,   KC_LEFT_GUI,     KC_DEL,  KC_SPACE,
                                            KC_ESC, KC_ENTER,     KC_BSPC
