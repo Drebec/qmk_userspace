@@ -133,6 +133,30 @@ const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM =
      );
 // clang-format on
 
+// #define LOWER_F LT(LAYER_LOWER, KC_F)
+// #define RAISE_J LT(LAYER_RAISE, KC_J)
+// #define PT_K LT(LAYER_POINTER, KC_K)
+// #define CTL_X LCTL_T(KC_X)
+// #define ALT_C LALT_T(KC_C)
+// #define SFT_V LSFT_T(KC_V)
+// #define CTL_DOT LCTL_T(KC_DOT)
+// #define ALT_COMM LALT_T(KC_COMM)
+// #define SFT_M LSFT_T(KC_M)
+
+bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case CTL_X:
+        case ALT_C:
+        case SFT_V:
+        case SFT_M:
+        case ALT_COMM:
+        case CTL_DOT:
+            return false;
+        default:
+            return true;
+    }
+}
+
 bool get_retro_tapping(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case PT_K:
