@@ -42,8 +42,8 @@ static uint16_t auto_pointer_layer_timer = 0;
 #    endif // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_THRESHOLD
 #endif     // CHARYBDIS_AUTO_POINTER_LAYER_TRIGGER_ENABLE
 
-#define LOWER_F LT(LAYER_LOWER, KC_F)
-#define RAISE_J LT(LAYER_RAISE, KC_J)
+// #define LOWER_F LT(LAYER_LOWER, KC_F)
+// #define RAISE_J LT(LAYER_RAISE, KC_J)
 #define PT_K LT(LAYER_POINTER, KC_K)
 #define CTL_X LCTL_T(KC_X)
 #define ALT_C LALT_T(KC_C)
@@ -142,6 +142,17 @@ const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM =
 // #define CTL_DOT LCTL_T(KC_DOT)
 // #define ALT_COMM LALT_T(KC_COMM)
 // #define SFT_M LSFT_T(KC_M)
+
+bool get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case SFT_V:
+        case CTL_DOT:
+        case ALT_COMM:
+            return 500;
+        default:
+            return TAPPING_TERM;
+    }
+}
 
 bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {

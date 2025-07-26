@@ -23,6 +23,7 @@
 #define RETRO_TAPPING
 #define RETRO_TAPPING_PER_KEY
 #define TAPPING_TERM 120
+#define TAPPING_TERM_PER_KEY
 
 #ifdef VIA_ENABLE
 /* VIA configuration. */
