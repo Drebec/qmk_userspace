@@ -143,7 +143,7 @@ const char chordal_hold_layout[MATRIX_ROWS][MATRIX_COLS] PROGMEM =
 // #define ALT_COMM LALT_T(KC_COMM)
 // #define SFT_M LSFT_T(KC_M)
 
-int get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case SFT_V:
         case CTL_DOT:
