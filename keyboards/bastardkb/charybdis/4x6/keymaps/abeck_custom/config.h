@@ -17,8 +17,7 @@
 #pragma once
 
 /* abeck custom settings. */
-#define HOLD_ON_OTHER_KEYPRESS
-#define HOLD_ON_OTHER_KEYPRESS_PER_KEY
+#define PERMISSIVE_HOLD
 #define CHORDAL_HOLD
 #define RETRO_TAPPING
 #define RETRO_TAPPING_PER_KEY
